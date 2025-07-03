@@ -25,7 +25,7 @@ export const HomePage: React.FC = () => {
             <div className="animate-slide-up">
               <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-red-500 to-red-600 rounded-full px-8 py-4 text-white font-semibold text-lg shadow-2xl hover:shadow-red-500/25 transition-all duration-300 transform hover:scale-105">
                  <img
-              src="src\img\logo.jpg"
+              src="/logo.jpg"
               alt="Trophy"
               className="h-11 w-11 rounded-lg object-cover"
             />

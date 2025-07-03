@@ -29,7 +29,7 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentP
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
             <img
-              src="src\img\logo.jpg"
+              src="/logo.jpg"
               alt="Trophy"
               className="h-11 w-11 rounded-full object-cover"
             />
