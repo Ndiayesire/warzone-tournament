@@ -68,7 +68,7 @@ export const AdminMatches: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl mb-6">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-xl mb-6">
             <BarChart3 className="h-8 w-8 text-white" />
           </div>
           <h1 className="text-4xl font-bold text-white mb-4">Statistiques de Match</h1>
@@ -87,7 +87,7 @@ export const AdminMatches: React.FC = () => {
           {/* Match Form */}
           <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700">
             <div className="flex items-center space-x-3 mb-6">
-              <Plus className="h-6 w-6 text-orange-400" />
+              <Plus className="h-6 w-6 text-red-500" />
               <h2 className="text-2xl font-bold text-white">Nouveau Match</h2>
             </div>
 
@@ -163,7 +163,7 @@ export const AdminMatches: React.FC = () => {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-400">Points calculés:</span>
-                    <span className="text-orange-400 font-bold text-lg">{getCalculatedPoints()}</span>
+                    <span className="text-red-500 font-bold text-lg">{getCalculatedPoints()}</span>
                   </div>
                 </div>
               )}
@@ -171,7 +171,7 @@ export const AdminMatches: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting || !selectedTeam}
-                className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold py-3 rounded-lg hover:from-orange-600 hover:to-orange-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 transform hover:scale-105"
+                className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold py-3 rounded-lg hover:from-red-600 hover:to-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 transform hover:scale-105"
               >
                 {isSubmitting ? 'Enregistrement...' : 'Enregistrer le match'}
               </button>
@@ -181,7 +181,7 @@ export const AdminMatches: React.FC = () => {
           {/* Points System Reference */}
           <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700">
             <div className="flex items-center space-x-3 mb-6">
-              <Target className="h-6 w-6 text-orange-400" />
+              <Target className="h-6 w-6 text-red-500" />
               <h2 className="text-2xl font-bold text-white">Système de Points</h2>
             </div>
 
@@ -193,9 +193,9 @@ export const AdminMatches: React.FC = () => {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-orange-500/10 to-orange-600/10 rounded-lg p-4 border border-orange-500/20">
+              <div className="bg-gradient-to-r from-red-500/10 to-red-600/10 rounded-lg p-4 border border-red-500/20">
                 <div className="flex justify-between items-center">
-                  <span className="text-orange-400 font-semibold">2ème - 5ème place</span>
+                  <span className="text-red-500 font-semibold">2ème - 5ème place</span>
                   <span className="text-white">Kills × 1.4</span>
                 </div>
               </div>

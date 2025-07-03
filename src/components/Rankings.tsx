@@ -37,7 +37,7 @@ export const Rankings: React.FC = () => {
       case 2:
         return <Medal className="h-6 w-6 text-gray-400" />;
       case 3:
-        return <Medal className="h-6 w-6 text-orange-600" />;
+        return <Medal className="h-6 w-6 text-red-600" />;
       default:
         return <div className="w-6 h-6 bg-slate-600 rounded-full flex items-center justify-center text-white text-sm font-bold">{position}</div>;
     }
@@ -60,7 +60,7 @@ export const Rankings: React.FC = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center">
         <div className="text-center">
-          <Loader2 className="h-12 w-12 text-orange-500 animate-spin mx-auto mb-4" />
+          <Loader2 className="h-12 w-12 text-red-500 animate-spin mx-auto mb-4" />
           <p className="text-white text-lg">Chargement des données...</p>
         </div>
       </div>
@@ -71,7 +71,7 @@ export const Rankings: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl mb-6">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-xl mb-6">
             <Trophy className="h-8 w-8 text-white" />
           </div>
           <h1 className="text-4xl font-bold text-white mb-4">Classement</h1>
@@ -87,7 +87,7 @@ export const Rankings: React.FC = () => {
               onClick={() => setActiveTab('teams')}
               className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-200 ${
                 activeTab === 'teams'
-                  ? 'bg-orange-500 text-white shadow-lg'
+                  ? 'bg-red-500 text-white shadow-lg'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -98,7 +98,7 @@ export const Rankings: React.FC = () => {
               onClick={() => setActiveTab('players')}
               className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-200 ${
                 activeTab === 'players'
-                  ? 'bg-orange-500 text-white shadow-lg'
+                  ? 'bg-red-500 text-white shadow-lg'
                   : 'text-gray-400 hover:text-white'
               }`}
             >

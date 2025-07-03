@@ -73,7 +73,7 @@ export const AdminTeams: React.FC = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center">
         <div className="text-center">
-          <Loader2 className="h-12 w-12 text-orange-500 animate-spin mx-auto mb-4" />
+          <Loader2 className="h-12 w-12 text-red-500 animate-spin mx-auto mb-4" />
           <p className="text-white text-lg">Chargement des équipes...</p>
         </div>
       </div>
@@ -84,7 +84,7 @@ export const AdminTeams: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl mb-6">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-xl mb-6">
             <Users className="h-8 w-8 text-white" />
           </div>
           <h1 className="text-4xl font-bold text-white mb-4">Gestion des Équipes</h1>

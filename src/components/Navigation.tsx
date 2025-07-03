@@ -28,8 +28,12 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentP
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
-            <Trophy className="h-8 w-8 text-orange-500" />
-            <span className="text-xl font-bold text-white">Warzone Tournament</span>
+            <img
+              src="src\img\logo.jpg"
+              alt="Trophy"
+              className="h-11 w-11 rounded-full object-cover"
+            />
+            <span className="text-xl font-bold text-white">Esport Nation</span>
           </div>
           
           <div className="flex space-x-1">
@@ -39,7 +43,7 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentP
                 onClick={() => setCurrentPage(id)}
                 className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 ${
                   currentPage === id
-                    ? 'bg-orange-500 text-white shadow-lg'
+                    ? 'bg-red-800 text-white shadow-lg'
                     : 'text-gray-300 hover:text-white hover:bg-slate-800'
                 }`}
               >
@@ -54,7 +58,7 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentP
                 onClick={() => setCurrentPage(id)}
                 className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 ${
                   currentPage === id
-                    ? 'bg-orange-500 text-white shadow-lg'
+                    ? 'bg-red-800 text-white shadow-lg'
                     : 'text-gray-300 hover:text-white hover:bg-slate-800'
                 }`}
               >
@@ -69,7 +73,7 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentP
                 onClick={() => setCurrentPage(id)}
                 className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 ${
                   currentPage === id
-                    ? 'bg-orange-500 text-white shadow-lg'
+                    ? 'bg-red-800 text-white shadow-lg'
                     : 'text-gray-300 hover:text-white hover:bg-slate-800'
                 }`}
               >
