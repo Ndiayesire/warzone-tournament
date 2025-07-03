@@ -11,7 +11,7 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onLogin }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === 'esport@senegal2025') {
+    if (password === 'esport@2025') {
       onLogin();
     } else {
       setError('Mot de passe incorrect');
