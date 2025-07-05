@@ -1,5 +1,5 @@
 // API endpoints - using relative path instead of hard-coded localhost
-const API_BASE_URL = '/api';
+const API_BASE_URL = 'https://hook-wz-7bc6df099af8.herokuapp.com/api';
 
 class DatabaseService {
   private initialized = false;
