@@ -9,7 +9,7 @@ export const HomePage: React.FC = () => {
   {/* IMAGE BACKGROUND */}
   <div
     className="absolute inset-0 bg-black bg-cover bg-center blur-sm scale-105"
-style={{ backgroundImage: "url('background.jpg')" }}
+style={{ backgroundImage: "url('background.png')" }}
   ></div>
 
   {/* COLOR OVERLAY */}
